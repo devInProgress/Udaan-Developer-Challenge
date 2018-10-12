@@ -1,6 +1,6 @@
 'use strict';
 
-import DbaMovieScreen from '../../dbAccessLayers/movieScreen';
+import { movieScreen as DbaMovieScreen } from '../../dbAccessLayers';
 
 const dml_functions = {};
 

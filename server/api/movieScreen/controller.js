@@ -1,6 +1,6 @@
 'use strict';
 
-import MovieScreenDbm from '../../dbAdapters/dbManipulationLayers/movieScreen';
+import { movieScreen as MovieScreenDbm } from '../../dbAdapters/dbManipulationLayers';
 
 const controller = {};
 
