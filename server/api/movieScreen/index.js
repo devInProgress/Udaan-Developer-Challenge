@@ -5,7 +5,9 @@ import controller from './controller';
 
 const router = express.Router();
 
-router.post('/', )
+router.post('/', controller.createMovieScreen);
+
+module.exports = router;
 
 
 
