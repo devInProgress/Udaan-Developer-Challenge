@@ -7,4 +7,8 @@ Promise.promisifyAll(MovieScreen);
 
 const dao_functions = {};
 
-dao_functions.
+dao_functions.saveMovieScreen = (movieScreen) => {
+  return movieScreen.saveAsync();
+}
+
+module.exports = dao_functions;
