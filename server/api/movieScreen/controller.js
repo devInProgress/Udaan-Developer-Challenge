@@ -10,7 +10,13 @@ controller.createMovieScreen = (req, res) => {
     return res.status(400).send('name not provided');
   }
   const movieScreenDetails = req.body;
-  return MovieScreenDbm.createMovieScreen(movieScreenDetails);
+  MovieScreenDbm.createMovieScreen(movieScreenDetails)
+    .then(result => {
+      return res.send(result);
+    })
+    .catch(error => {
+      return res.send(error);
+    })
 }
 
 module.exports = controller;
